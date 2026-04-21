@@ -1,0 +1,65 @@
+html {
+    background-color: #1B3C53;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 96vh;
+}
+
+.projekt-btn {
+    border: none;
+    background-color: #D2C1B6;
+    color: #1B3C53;
+    padding: 15px 25px;
+    border-radius: 15px;
+    transition: transform .3s ease;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.projekt-btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.projekt-btn:active {
+    transform: scale(.9);
+}
+
+#loading-screen {
+    position: fixed;
+    inset: 0;
+    background: rgb(0, 0, 0);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    z-index: 9999;
+}
+
+.loader {
+    width: 200px;
+    height: 6px;
+    background: #444;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.loader::after {
+    content: "";
+    display: block;
+    width: 40%;
+    height: 100%;
+    background: #00ff99;
+    animation: loading 3s infinite linear;
+}
+
+@keyframes loading {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(250%); }
+}

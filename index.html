@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gruppenarbeit</title>
+</head>
+<body>
+
+    <a class="projekt-btn" href="malware.html">Gruppenarbeit anschauen</a>
+
+    <div id="loading-screen">
+        <div class="loader"></div>
+        <p>Rootkit wird installiert...</p>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+        const btn = document.querySelector(".projekt-btn");
+        const loader = document.getElementById("loading-screen");
+
+        btn.addEventListener("click", (e) => {
+            e.preventDefault();
+
+            loader.style.display = "flex";
+
+            const target = btn.getAttribute("href");
+
+            setTimeout(() => {
+                window.location.href = target;
+            }, 4000);
+        });
+        });
+    </script>
+    
+</body>
+</html>
