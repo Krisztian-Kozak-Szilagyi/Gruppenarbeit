@@ -39,13 +39,18 @@ body {
 #loading-screen {
     position: fixed;
     inset: 0;
-    background: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
     display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: rgb(0, 0, 0);
     z-index: 9999;
+}
+
+.video {
+    width: 150px;
+    margin-bottom: 2rem;
 }
 
 .loader {
@@ -60,15 +65,23 @@ body {
 .loader::after {
     content: "";
     display: block;
-    width: 40%;
+    width: 0%;
     height: 200%;
     background: #c01b1b;
-    animation: loading 3s infinite linear;
+    animation: loading 4.5s infinite linear;
+}
+
+p {
+    font-weight: bolder;
 }
 
 @keyframes loading {
-    0% { transform: translateX(-100%); }
-    100% { transform: translateX(250%); }
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 650px){
