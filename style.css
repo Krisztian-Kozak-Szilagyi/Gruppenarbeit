@@ -2,6 +2,13 @@ html {
     background-color: #1B3C53;
 }
 
+h1 {
+    position: fixed;
+    top: 10px;
+    color: #D2C1B6;
+    padding: 0 10px;
+}
+
 body {
     display: flex;
     align-items: center;
@@ -43,7 +50,7 @@ body {
 
 .loader {
     width: 200px;
-    height: 6px;
+    height: 12px;
     background: #444;
     overflow: hidden;
     border-radius: 10px;
@@ -54,8 +61,8 @@ body {
     content: "";
     display: block;
     width: 40%;
-    height: 100%;
-    background: #00ff99;
+    height: 200%;
+    background: #c01b1b;
     animation: loading 3s infinite linear;
 }
 
