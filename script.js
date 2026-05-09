@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+// Deleting virus images
 document.querySelector(".ms-defender").addEventListener("click", function() {
     var length = document.querySelectorAll(".floating-virus").length;
     document.querySelector(".adware").removeAttribute("src");
