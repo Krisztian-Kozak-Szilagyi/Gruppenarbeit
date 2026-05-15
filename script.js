@@ -1,3 +1,5 @@
+
+// Waiting for a btn click and prevents the loading of the next site by 4.5s
 document.addEventListener("DOMContentLoaded", () => {
     const btn = document.querySelector(".projekt-btn");
     const loader = document.getElementById("loading-screen");
