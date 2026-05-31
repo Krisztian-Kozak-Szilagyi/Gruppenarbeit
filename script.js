@@ -1,4 +1,3 @@
-// Going to delete this after its viewed
 document.addEventListener("DOMContentLoaded", () => {
     const btn = document.querySelector(".projekt-btn");
     const loader = document.getElementById("loading-screen");
